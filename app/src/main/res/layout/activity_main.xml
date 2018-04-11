@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF033B6C"
+    tools:context="com.nalayak.helloandroid.MainActivity">
+
+    <ImageView
+        android:id="@+id/udacityLogoImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/udacityLogoHeight"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/udacityLogoMarginBottom"
+        android:layout_marginTop="@dimen/udacityLogoMarginTop"
+        android:scaleType="centerInside"
+        android:src="@drawable/udacity" />
+
+    <ImageView
+        android:id="@+id/callImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/udacityLogoImage"
+        android:layout_alignStart="@+id/udacityLogoImage"
+        android:layout_below="@+id/udacityLogoImage"
+        android:layout_margin="@dimen/callImageMargin"
+        android:scaleType="centerInside"
+        android:src="@drawable/call" />
+
+    <ImageView
+        android:id="@+id/websiteImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/callImage"
+        android:layout_alignStart="@+id/callImage"
+        android:layout_below="@+id/callImage"
+        android:layout_marginBottom="@dimen/websiteImageMargin"
+        android:scaleType="centerInside"
+        android:src="@drawable/website" />
+
+    <ImageView
+        android:id="@+id/addressImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/websiteImage"
+        android:layout_alignStart="@+id/websiteImage"
+        android:layout_below="@+id/websiteImage"
+        android:scaleType="centerInside"
+        android:src="@drawable/address"
+        android:tint="#ffffff" />
+
+    <TextView
+        android:id="@+id/callText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/callImage"
+        android:layout_centerHorizontal="true"
+        android:autoLink="phone"
+        android:text="@string/_650_555_5555"
+        android:textColorLink="@android:color/white"
+        android:textSize="@dimen/callTextSize" />
+
+    <TextView
+        android:id="@+id/websiteText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/websiteImage"
+        android:layout_alignLeft="@+id/callText"
+        android:layout_alignStart="@+id/callText"
+        android:autoLink="web"
+        android:text="@string/www_udacity_com"
+        android:textColorLink="@android:color/white"
+        android:textSize="@dimen/websiteTextSize" />
+
+    <TextView
+        android:id="@+id/addressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/websiteText"
+        android:layout_alignStart="@+id/websiteText"
+        android:layout_alignTop="@+id/addressImage"
+        android:autoLink="map"
+        android:text="2465 Latham St, Mountain View, CA 94043"
+        android:textColorLink="@android:color/white"
+        android:textSize="@dimen/addressTextSize" />
+
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="udacityLogoHeight">200dp</dimen>
+    <dimen name="udacityLogoMarginBottom">70dp</dimen>
+    <dimen name="udacityLogoMarginTop">20dp</dimen>
+    <dimen name="callImageMargin">30dp</dimen>
+    <dimen name="websiteImageMargin">30dp</dimen>
+    <dimen name="callTextSize">20sp</dimen>
+    <dimen name="websiteTextSize">20sp</dimen>
+    <dimen name="addressTextSize">20sp</dimen>
+</resources>
